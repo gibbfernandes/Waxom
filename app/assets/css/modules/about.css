@@ -17,7 +17,8 @@
     font-size: 44px;
   }
 
-  &:hover &__icon, &:hover &__title {
+  &:hover &__icon,
+  &:hover &__title {
     color: #c7b299;
   }
 
