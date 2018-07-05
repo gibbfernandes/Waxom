@@ -1052,7 +1052,7 @@ img {
   }
 
 .page-section--partners {
-    background: url(../../../assets/images/partnersbg.jpg) no-repeat;
+    background: url(../../assets/images/partnersbg.jpg) no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
