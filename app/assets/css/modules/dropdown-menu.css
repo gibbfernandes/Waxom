@@ -1,0 +1,80 @@
+.dropdown-menu {
+  display: none;
+  position: relative;
+  width: auto;
+
+  background-color: #000;
+  min-width: 160px;
+
+  @mixin atLarge {
+    position: absolute;
+    width: 230px;
+    top: 100%;
+    left: 0;
+  }
+
+  & li {
+    float: none;
+    position: relative;
+    padding: 0;
+  }
+
+  & a {
+    padding: 20px 30px;
+    font-size: 13px;
+    font-weight: 500;
+    display: block;
+    cursor: pointer;
+
+    @mixin atLarge {
+      padding: 20px 10px;
+    }
+  }
+
+  &__hover a {
+    color: #000;
+  }
+
+  &__hover:hover {
+    background-color: #FFF;
+  }
+
+  & a:hover {
+    color: #000;
+  }
+
+  &--is-visible {
+    display: block;
+  }
+
+  &__sub-menu {
+    display: none;
+    width: auto;
+    background-color: #000;
+
+    @mixin atLarge {
+      position: absolute;
+      top: 0;
+      left: 100%;
+      width: 230px;
+    }
+
+    & a {
+      color: #FFF;
+      padding: 20px 50px;
+
+      @mixin atLarge {
+        padding: 20px 10px;
+      }
+    }
+
+    &--right {
+      left: -100%;
+    }
+
+    &--is-visible {
+      display: block;
+    }
+  }
+
+}

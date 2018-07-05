@@ -1,0 +1,57 @@
+.mobile-navigation {
+  display: block;
+  position: relative;
+
+  @mixin atLarge {
+    display: none;
+  }
+
+  @mixin clearfix;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    
+    @mixin clearfix;
+  }
+
+  li {
+    list-style: none;
+    float: none;
+    display: block;
+    padding-right: 0;
+    position: relative;
+
+    &:last-child a:after {
+      display: none;
+    }
+  }
+
+  a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    padding: 23px 15px;
+    font-size: 14px;
+    position: relative;
+
+    &:after {
+      display: block;
+      content: "";
+      width: 97%;
+      height: 1px;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: #fff;
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @mixin atLarge {
+      padding: 20px 0;
+    }
+  }
+}

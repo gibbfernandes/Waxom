@@ -1,0 +1,149 @@
+.site-header {
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 0;
+  transition: all .3s ease-out;
+  background-color: #FFF;
+
+  @mixin atLarge {
+    position: fixed;
+    background-color: transparent;
+    height: 110px;
+
+    &--dark {
+      background-color: #FFF;
+
+      @mixin atLarge {
+        height: 79px;
+      }
+    }
+  }
+
+  &__logo {
+    position: relative;
+    float: left;
+    z-index: 4;
+
+    &__graphic {
+      max-height: 52px;
+      opacity: 0;
+      display: none;
+
+      @mixin atLarge {
+        opacity: 1;
+        display: block;
+
+        .site-header--dark & {
+          opacity: 0;
+          display: none;
+        }
+      }
+
+      &--overlay {
+        opacity: 1;
+        display: block;
+
+        @mixin atLarge {
+          opacity: 0;
+          display: none;
+
+          .site-header--dark & {
+            opacity: 1;
+            display: block;
+          }
+        }
+      }
+    }
+
+  }
+
+  &__menu {
+    opacity: 0;
+    transition: all .3s ease-out;
+    /*padding-top: 50px;*/
+    z-index: -1;
+    visibility: hidden;
+    position: absolute;
+    transform: translateY(-20%);
+
+    left: 0;
+    right: 0;
+    top: 68px;
+
+    &--is-visible {
+      opacity: 1;
+      visibility: visible;
+      z-index: 1;
+      background-color: #000;
+      transform: translateY(0);
+    }
+
+    @mixin atLarge {
+      float: right;
+      position: static;
+      visibility: visible;
+      opacity: 1;
+      z-index: 1;
+      background-color: transparent;
+      padding-top: 0;
+      transform: translateY(0);
+    }
+
+    @mixin clearfix;
+
+
+
+  }
+
+  &__util {
+    padding: 20px 0;
+    float: right;
+    display: inline-block;
+    color: #000;
+
+    @mixin atLarge {
+      color: #FFF;
+
+      .site-header--dark & {
+        color: #000;
+      }
+    }
+
+    @mixin clearfix;
+
+    &__icon {
+      padding: 0 10px;
+      cursor: pointer;
+
+      @mixin atLarge {
+        padding: 0 30px;
+      }
+
+      &--no-padding-large {
+
+        @mixin atLarge{
+          padding: 0;
+        }
+      }
+
+      &--mobile-menu {
+        visibility: visible;
+        display: inline-block;
+        padding-left: 10px;
+        position: relative;
+        z-index: 10;
+        cursor: pointer;
+
+        @mixin atLarge {
+          visibility: hidden;
+          display: none;
+        }
+      }
+    }
+
+  }
+}

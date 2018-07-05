@@ -1,0 +1,12 @@
+.partners {
+  text-align: center;
+
+  img {
+    margin: 30px;
+    transform: scale(.8);
+
+    @mixin atMedium {
+      transform: scale(1);
+    }
+  }
+}

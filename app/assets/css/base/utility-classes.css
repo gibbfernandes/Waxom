@@ -1,0 +1,32 @@
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+
+  @mixin clearfix;
+
+  &--narrow {
+    max-width: 1230px;
+
+    @mixin atSmall {
+      padding: 0 30px;
+    }
+  }
+}
+
+.float-right-until-lar {
+  @mixin atLarge {
+    float: right;
+  }
+}
+
+.float-left-until-lar {
+  @mixin atLarge {
+    float: left;
+  }
+}
+
+.text-align-right {
+  text-align: right;
+}

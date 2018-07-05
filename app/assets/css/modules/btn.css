@@ -1,0 +1,12 @@
+.btn {
+  text-decoration: none;
+  color: #FFF;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 800;
+  font-family: 'Raleway', sans-serif;
+  background-color: $btncolor;
+  padding: 20px 35px;
+  box-shadow: 1px 3px #736357;
+  border-radius: 9px;
+}

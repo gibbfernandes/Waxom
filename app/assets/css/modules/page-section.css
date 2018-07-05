@@ -1,0 +1,26 @@
+.page-section {
+  padding: 45px 0;
+
+  @mixin atMedium {
+    padding: 80px 0;
+  }
+
+  &--light-grey-bg {
+    background-color: #f1f0ed;
+  }
+
+  &--no-b-padding {
+    padding-bottom: 0;
+  }
+
+  &--partners {
+    background: url(../../../assets/images/partnersbg.jpg) no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &--footer-widgets {
+    background-color: #191919;
+  }
+}

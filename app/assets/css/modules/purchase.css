@@ -1,0 +1,36 @@
+.purchase {
+  padding: 45px 0;
+  background-color: #231c1a;
+  color: #FFF;
+
+  &__title {
+    text-align: center;
+
+    @mixin atLarge {
+      text-align: left;
+    }
+  }
+
+  span {
+    color: #c7b299;
+  }
+
+  &__text {
+    margin: 10px 0 25px 0;
+    font-size: 14px;
+    font-weight: 200;
+
+    @mixin atLarge {
+      margin: 10px 0 0 0;
+      font-size: 18px;
+    }
+  }
+
+  &__button {
+    text-align: center;
+
+    @mixin atLarge {
+      text-align: right;
+    }
+  }
+}

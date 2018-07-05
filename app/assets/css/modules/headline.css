@@ -1,0 +1,36 @@
+.headline {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 30px;
+
+  @mixin atMedium {
+    font-size: 30px;
+  }
+
+  &--our-begin-small-head {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    max-width: 760px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--no-margin {
+    margin: 0;
+  }
+
+  &--purchase {
+    font-size: 24px;
+
+    @mixin atMedium {
+      font-size: 28px;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.footer-widgets {
+
+  &__logo {
+    max-height: 52px;
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    color: #FFF;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 50px 0 30px 0;
+
+    @mixin atSmall {
+        margin: 20px 0 30px 0;
+    }
+
+  }
+
+  &__contact {
+    margin-bottom: 12px;
+    color: #636363;
+    position: relative;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #232323;
+    z-index: 1;
+  }
+
+  &__contact-icon {
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+    width: 18px;
+    text-align: center;
+    color: #636363;
+  }
+
+  &__contact-details {
+    font-family: 'Montserrat', sans-serif;
+    color: #666;
+    display: inline-block;
+    padding-left: 30px;
+
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+}
