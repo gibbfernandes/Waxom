@@ -1080,13 +1080,19 @@ img {
     margin-bottom: 0;
   }
 
+.about i {
+    color: #363636;
+    transition: all .3s ease-out;
+  }
+
 .about__icon {
     width: 100%;
     font-size: 44px;
   }
 
 .about:hover .about__icon,
-  .about:hover .about__title {
+  .about:hover .about__title,
+  .about:hover i {
     color: #c7b299;
   }
 

@@ -4,6 +4,7 @@
   cursor: pointer;
   max-width: 500px;
 
+
   @mixin atMedium {
     margin: 0 auto;
   }
@@ -12,13 +13,19 @@
     margin-bottom: 0;
   }
 
+  i {
+    color: #363636;
+    transition: all .3s ease-out;
+  }
+
   &__icon {
     width: 100%;
     font-size: 44px;
   }
 
   &:hover &__icon,
-  &:hover &__title {
+  &:hover &__title,
+  &:hover i {
     color: #c7b299;
   }
 
