@@ -4,7 +4,6 @@
   cursor: pointer;
   max-width: 500px;
 
-
   @mixin atMedium {
     margin: 0 auto;
   }

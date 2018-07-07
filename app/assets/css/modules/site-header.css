@@ -16,10 +16,7 @@
 
     &--dark {
       background-color: #FFF;
-
-      @mixin atLarge {
-        height: 79px;
-      }
+      height: 79px;
     }
   }
 

@@ -36,14 +36,14 @@ gulp.task('faFolder', ['deleteDistFolder'], function() {
 });
 
 gulp.task('useminTrigger', ['deleteDistFolder'], function() {
-	 gulp.start("usemin");
+	 gulp.start('usemin');
 });
 
 gulp.task('usemin', ['styles', 'scripts'], function() {
 	return gulp.src("./app/index.html")
 		.pipe(usemin({
-			css: [function() {return rev()}],
-			js: [function() {return rev()}, function() {return uglify()}]
+			css: [function() {return rev()}, function() {return cssnano()}],
+			js: [function() {return rev()}, function() {return uglify().on('error', function(e) {console.log(e);})}]
 		}))
 		.pipe(gulp.dest("./docs"));
 });

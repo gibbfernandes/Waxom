@@ -501,14 +501,8 @@ img {
 
     .site-header--dark {
       background-color: #FFF;
+      height: 79px;
     }
-
-      @media(min-width: 992px) {
-
-    .site-header--dark {
-        height: 79px
-    }
-  }
   }
 
 .site-header__logo {
