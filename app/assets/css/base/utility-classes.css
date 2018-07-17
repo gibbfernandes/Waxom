@@ -3,8 +3,13 @@
   margin: 0 auto;
   padding: 0 15px;
   position: relative;
+  overflow: hidden;
 
   @mixin clearfix;
+
+  &--overflow-visible {
+    overflow: visible;
+  }
 
   &--narrow {
     max-width: 1230px;

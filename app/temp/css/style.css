@@ -361,6 +361,7 @@ img {
   margin: 0 auto;
   padding: 0 15px;
   position: relative;
+  overflow: hidden;
 }
 
 .container::after, .container::before {
@@ -370,6 +371,10 @@ img {
 
 .container::after {
     clear: both;
+  }
+
+.container--overflow-visible {
+    overflow: visible;
   }
 
 .container--narrow {
